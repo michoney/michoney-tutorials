@@ -155,24 +155,28 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 持续更新中：
 - ✅ 三大智能体横向对比（Codex CLI vs Hermes vs OpenClaw）
 - ✅ Chrome 内存优化（从 4.5GB 降到 1GB）
-- ✅ Ideogram 4 本地部署教程
-- ✅ Z-Image Turbo 本地安装教程（支持 NSFW / 8G显存可跑）
+- ✅ AI 编程王者实测：ChatGPT5.5 vs Claude 4.7 vs DeepSeek V4 vs Qwen 3.6
+- ✅ DeepSeek-V4 正式发布：免费开源 + 百万上下文
+- ✅ ChatGPT Images 2.0 正式发布：OpenAI 最强图片模型
+- ✅ OpenClaw 免费接入 ChatGPT Images 2.0（无需 API Key / 无需 Token）
+- ✅ Open Claw + 本地模型：免费无限 Token 的 ChatGPT 平替方案
+- ✅ Hermes + Qwen3.6：本地最强 Agent 组合
 - ✅ Holo 3.1 Agent 本地部署实测（免费无限 Token + 接入 OpenClaw）
-- ✅ Pearl (PRL) 珍珠币挖矿教程（显卡矿工回归！单卡日收益 $10）
+- ✅ Claude Code + Ollama 免费本地 AI 编程助手（CC Switch 教程）
 - ✅ Qwen3.6-35B 越狱版部署教程（目前最强无审查开源模型 / 6G显存可跑）
 - ✅ RTX3070 8G 成功跑 Qwen3.6 多模态（llama.cpp + MoE 优化教程）
 - ✅ llama.cpp 新版发布：Windows 预编译 + CUDA13/Vulkan/HIP 全面支持
-- ✅ Claude Code + Ollama 免费本地 AI 编程助手（CC Switch 教程）
+- ✅ Ideogram 4 本地部署教程
+- ✅ Z-Image Turbo 本地安装教程（支持 NSFW / 8G显存可跑）
 - ✅ Sulphur 2 无审查 AI 视频模型本地部署（8G显存可跑）
-- ✅ Open Claw + 本地模型：免费无限 Token 的 ChatGPT 平替方案
-- ✅ OpenClaw 免费接入 ChatGPT Images 2.0（无需 API Key / 无需 Token）
-- ✅ 编程王者实测：ChatGPT5.5 vs Claude 4.7 vs DeepSeek V4 vs Qwen 3.6
+- ✅ Pearl (PRL) 珍珠币挖矿教程（显卡矿工回归！单卡日收益 $10）
 - 🔄 更多 AI 工具教程 coming soon...
 ---
 
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
