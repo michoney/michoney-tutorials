@@ -136,7 +136,7 @@ chmod +x ./scripts/optimize_chrome_memory.sh
 
 ## 🎨 Ideogram 4 本地部署教程
 
-📁 `articles/ideogram4-本地部署教程.md`
+📁 `tutorials/ideogram4-本地部署教程.md`
 
 93 亿参数开源 AI 图片生成模型，媲美 Midjourney / GPT-Image，支持 ComfyUI。
 
@@ -176,6 +176,7 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
