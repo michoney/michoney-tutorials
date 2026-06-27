@@ -161,12 +161,14 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 - ✅ Pearl (PRL) 珍珠币挖矿教程（显卡矿工回归！单卡日收益 $10）
 - ✅ Qwen3.6-35B 越狱版部署教程（目前最强无审查开源模型 / 6G显存可跑）
 - ✅ RTX3070 8G 成功跑 Qwen3.6 多模态（llama.cpp + MoE 优化教程）
+- ✅ llama.cpp 新版发布：Windows 预编译 + CUDA13/Vulkan/HIP 全面支持
 - 🔄 更多 AI 工具教程 coming soon...
 ---
 
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
