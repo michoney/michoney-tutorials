@@ -154,7 +154,7 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 
 持续更新中：
 - ✅ 三大智能体横向对比（Codex CLI vs Hermes vs OpenClaw）
-- ✅ Chrome 内存优化（从 4.5GB 降到 1GB）
+- ✅ Chrome 内存优化（从 4.5GB 降到 1GB）+ 7个隐藏设置翻倍提速
 - ✅ AI 编程王者实测：ChatGPT5.5 vs Claude 4.7 vs DeepSeek V4 vs Qwen 3.6
 - ✅ Qwen3.6-Plus 发布：最强编程 AI，两天登顶
 - ✅ DeepSeek-V4 正式发布：免费开源 + 百万上下文
@@ -184,6 +184,7 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
