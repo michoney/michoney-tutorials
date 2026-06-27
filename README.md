@@ -161,6 +161,8 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 - ✅ ChatGPT Images 2.0 正式发布：OpenAI 最强图片模型
 - ✅ OpenClaw 免费接入 ChatGPT Images 2.0（无需 API Key / 无需 Token）
 - ✅ Open Claw + 本地模型：免费无限 Token 的 ChatGPT 平替方案
+- ✅ OpenClaw 装进 U 盘！即插即用便携方案
+- ✅ OpenClaw 小龙虾完整安装教程
 - ✅ Hermes Agent 本地部署实战：从安装到 Telegram 控制
 - ✅ Hermes Agent 部署 UI + 本地模型，对接微信（完全免费）
 - ✅ Hermes + Qwen3.6：本地最强 Agent 组合
@@ -182,6 +184,7 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
