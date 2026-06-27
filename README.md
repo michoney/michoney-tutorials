@@ -163,12 +163,15 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 - ✅ RTX3070 8G 成功跑 Qwen3.6 多模态（llama.cpp + MoE 优化教程）
 - ✅ llama.cpp 新版发布：Windows 预编译 + CUDA13/Vulkan/HIP 全面支持
 - ✅ Claude Code + Ollama 免费本地 AI 编程助手（CC Switch 教程）
+- ✅ Sulphur 2 无审查 AI 视频模型本地部署（8G显存可跑）
+- ✅ Open Claw + 本地模型：免费无限 Token 的 ChatGPT 平替方案
 - 🔄 更多 AI 工具教程 coming soon...
 ---
 
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
