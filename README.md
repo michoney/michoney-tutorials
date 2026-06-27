@@ -158,32 +158,25 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 - ✅ AI 编程王者实测：ChatGPT5.5 vs Claude 4.7 vs DeepSeek V4 vs Qwen 3.6
 - ✅ Qwen3.6-Plus 发布：最强编程 AI，两天登顶
 - ✅ DeepSeek-V4 正式发布：免费开源 + 百万上下文
-- ✅ ChatGPT Images 2.0 正式发布：OpenAI 最强图片模型
-- ✅ OpenClaw 免费接入 ChatGPT Images 2.0（无需 API Key / 无需 Token）
-- ✅ Open Claw + 本地模型：免费无限 Token 的 ChatGPT 平替方案
-- ✅ OpenClaw 装进 U 盘！即插即用便携方案
-- ✅ OpenClaw 小龙虾完整安装教程
-- ✅ Hermes Agent 本地部署实战：从安装到 Telegram 控制
-- ✅ Hermes Agent 部署 UI + 本地模型，对接微信（完全免费）
-- ✅ Hermes + Qwen3.6：本地最强 Agent 组合
-- ✅ Holo 3.1 Agent 本地部署实测（免费无限 Token + 接入 OpenClaw）
+- ✅ ChatGPT Images 2.0 正式发布
+- ✅ OpenClaw 免费接入 ChatGPT Images 2.0 / 装进 U 盘 / 小龙虾安装 / NAS 部署
+- ✅ Hermes Agent 从安装到 Telegram / 微信 / Qwen3.6 组合全系列
 - ✅ Claude Code + Ollama 免费本地 AI 编程助手（CC Switch 教程）
-- ✅ Qwen3.6-35B 越狱版部署教程（目前最强无审查开源模型 / 6G显存可跑）
-- ✅ RTX3070 8G 成功跑 Qwen3.6 多模态（llama.cpp + MoE 优化教程）
-- ✅ llama.cpp 新版发布：Windows 预编译 + CUDA13/Vulkan/HIP 全面支持
-- ✅ Ideogram 4 本地部署教程
-- ✅ Z-Image Turbo 本地安装教程（支持 NSFW / 8G显存可跑）
-- ✅ Sulphur 2 无审查 AI 视频模型本地部署（8G显存可跑）
-- ✅ Gemma 4 正式发布 + 本地部署教程
-- ✅ 手机跑 Gemma 4 原生多模态（安卓 + iPhone 实测）
+- ✅ Holo 3.1 Agent 本地部署实测
+- ✅ Qwen3.6-35B 越狱版部署教程（6G显存可跑）
+- ✅ RTX3070 8G 跑 Qwen3.6 多模态 + llama.cpp 新版教程
+- ✅ Ideogram 4 / Z-Image Turbo / Sulphur 2 绘图视频模型部署
+- ✅ Gemma 4 全系列：发布 / 本地部署 / 手机端运行
+- ✅ PearOS：高度类似 macOS 的 Linux 系统安装教程
 - ✅ Cloudflare 免费节点搭建（永久可用 + 免费域名）
-- ✅ Pearl (PRL) 珍珠币挖矿教程（显卡矿工回归！单卡日收益 $10）
+- ✅ Pearl (PRL) 珍珠币挖矿教程（显卡矿工回归）
 - 🔄 更多 AI 工具教程 coming soon...
 ---
 
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
