@@ -157,8 +157,9 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 - ✅ Chrome 内存优化 + 7个隐藏设置翻倍提速
 - ✅ Winhance 一键给 Windows 瘦身
 - ✅ AI 编程王者 / Qwen3.6-Plus / Qwen3.5 多模态 / DeepSeek-V4
-- ✅ GPT-5.4 / GPT-5.3 Instant / Nano Banana 2 最新发布
+- ✅ GPT-5.4 / GPT-5.3 Instant / Gemini 3.1 Pro / Nano Banana 2
 - ✅ Seedance 2.0：一键生成短剧，人人当导演的 AI 时代
+- ✅ Deep Research：免费 AI 深度研究报告工具
 - ✅ Cursor 免费无限使用教程
 - ✅ OpenClaw 全系列 / Hermes Agent 全系列 / Claude Code + Ollama
 - ✅ Ideogram 4 / Z-Image Turbo / Sulphur 2 绘图视频模型
@@ -174,6 +175,7 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
