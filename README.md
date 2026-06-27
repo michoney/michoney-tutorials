@@ -154,12 +154,13 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 
 持续更新中：
 - ✅ 三大智能体横向对比（Codex CLI vs Hermes vs OpenClaw）
-- ✅ Chrome 内存优化
-- ✅ Ideogram 4 本地部署
+- ✅ Chrome 内存优化（从 4.5GB 降到 1GB）
+- ✅ Ideogram 4 本地部署教程
+- ✅ Z-Image Turbo 本地安装教程（支持 NSFW / 8G显存可跑）
 - 🔄 更多 AI 工具教程 coming soon...
-
 ---
 
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
