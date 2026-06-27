@@ -1,49 +1,53 @@
-# ⚡ Chrome 内存深度优化工具
+# ⚡ michoney 的科技工具箱
 
-> 从 4.5GB 到 1GB —— 不装任何扩展，纯配置调优
+> 搞机干货 · AI 教程 · 效率工具
 
-## 效果
+---
 
+## 📦 仓库内容
+
+### 1️⃣ Chrome 内存深度优化
+
+从 **4.5GB → 1GB**，不装任何扩展，纯配置调优。
+
+📁 `scripts/optimize_chrome_memory.ps1` ← Windows 一键运行
+📁 `SKILL.md` ← Codex AI 技能定义
+
+**效果：**
 | 项目 | 优化前 | 优化后 |
 |------|--------|--------|
-| Chrome 进程数 | 28 个 | 12 个 |
+| 进程数 | 28 | 12 |
 | 内存占用 | 4.5 GB | 1.0 GB |
 
-## 快速使用
+### 2️⃣ Ideogram 4 本地部署教程
+
+📁 `articles/ideogram4-本地部署教程.md`
+
+93 亿参数开源 AI 图片生成模型，媲美 Midjourney / GPT-Image，支持 ComfyUI。
+
+---
+
+## 🚀 快速使用
 
 ```powershell
+# Chrome 优化（Windows）
 .\scripts\optimize_chrome_memory.ps1
 ```
 
-脚本自动：关闭 Chrome → 清理缓存 → 写入配置 → 以优化参数重启
-
-## 优化原理
-
-| 优化项 | 效果 |
-|-------|------|
-| Memory Saver 冻结不活跃标签 | 省 30~50% |
-| 限制渲染进程最多 10 个 | 省 20~30% |
-| 禁用后台联网/同步/预连接 | 省 5~10% |
-| 清理缓存 | 省 100~500MB |
-| V8 堆限制 4GB | 省 10~20% |
-
-## 高级调参
-
-编辑脚本顶部：
-- MemoryLimitMB: 内存上限（小内存改 2048）
-- MaxRendererProcesses: 进程上限（小内存改 5）
-- InactiveTimeoutMin: 冻结时间（激进改 5）
-
-## 项目结构
-
-```
-chrome-memory-optimizer/
-├── SKILL.md                        # AI 技能定义
-├── scripts/
-│   └── optimize_chrome_memory.ps1  # 一键优化脚本
-├── assets/
-└── agents/
-    └── openai.yaml                 # AI 界面元数据
+```bash
+# Chrome 优化（Mac）
+./scripts/optimize_chrome_memory.sh
 ```
 
-> Chrome 149+ 已原生支持 Memory Saver，本项目只是把最优配置一键集成了。
+---
+
+## 📺 科技博主系列
+
+持续更新中：
+- ✅ Chrome 内存优化
+- ✅ Ideogram 4 本地部署
+- 🔄 更多 AI 工具教程 coming soon...
+
+---
+
+**Made with ❤️ by michoney**
