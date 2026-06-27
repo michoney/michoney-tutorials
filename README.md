@@ -157,10 +157,12 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 - ✅ Chrome 内存优化（从 4.5GB 降到 1GB）
 - ✅ Ideogram 4 本地部署教程
 - ✅ Z-Image Turbo 本地安装教程（支持 NSFW / 8G显存可跑）
+- ✅ Holo 3.1 Agent 本地部署实测（免费无限 Token + 接入 OpenClaw）
 - 🔄 更多 AI 工具教程 coming soon...
 ---
 
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
