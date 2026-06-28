@@ -6,6 +6,8 @@
 
 ## 📖 目录
 
+- [CodeFormer-GUI 视频去码工具](#-codeformer-gui-视频去码工具)
+
 - [三大 AI 编程/智能体工具能力对比](#三大-ai-编程智能体工具能力对比)
 - [Chrome 内存深度优化](#-chrome-内存深度优化)
 - [Ideogram 4 本地部署教程](#-ideogram-4-本地部署教程)
@@ -150,6 +152,21 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 
 ---
 
+
+---
+
+## 🎥 CodeFormer-GUI 视频去码工具
+
+📁 	utorials/codeformer-gui-视频去码教程.md
+
+一键去除视频马赛克，让模糊不清的视频瞬间高清化。桌面 GUI 版，开箱即用。
+
+**下载：**
+| 网盘 | 链接 |
+|------|------|
+| ☁️ 夸克网盘 | [点击下载](https://pan.quark.cn/s/b3a1a88bce29) |
+| ☁️ 云盘下载 | [点击下载](https://pan.cloudeop.com/s/488D75CC40842584) |
+
 ## 📺 科技博主系列
 
 持续更新中：
@@ -163,6 +180,7 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 - ✅ Deep Research：免费 AI 深度研究报告
 - ✅ Cursor 免费无限使用
 - ✅ OpenClaw 全系列 / Hermes Agent 全系列 / Claude Code + Ollama
+- ✅ CodeFormer-GUI：视频去码 / 高清化工具
 - ✅ Ideogram 4 / Z-Image Turbo / Sulphur 2 绘图视频模型
 - ✅ Gemma 4 全系列 / Qwen3.6 越狱版 / Holo 3.1 / llama.cpp
 - ✅ OMLX / Silicon：Mac 本地 AI 加速
@@ -176,6 +194,7 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
+
 
 
 
