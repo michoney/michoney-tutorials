@@ -47,6 +47,50 @@
 ![20260603113017 073380](https://www.freedidi.com/wp-content/uploads/2026/06/20260603113017_073380.webp)
 ### 同样，当你挖了一段时间后，就可以在查询你当前的挖矿所得了
 ## 【[查询余额](https://pearl.alphapool.tech/#miner/)】
+
+---
+
+## ⛏️ Solo Mining（独享挖矿）
+
+### 什么是 Solo Mining？
+
+- **Pool Mining（默认）**：多人一起挖，按算力比例分区块奖励，收益稳定但单产低
+- **Solo Mining**：你独享整个区块奖励，只有挖到块才有收益，方差大但收益上限高
+
+### 如何开启？
+
+在矿池设置中，将钱包地址前加上 `solo:` 前缀：
+
+```
+# 普通挖矿（Pool）
+-wal prl1p...au5pu
+
+# Solo 挖矿
+-wal solo:prl1p...au5pu
+```
+
+**Luckypool** 示例：
+
+```
+./alpha-miner -pool us.pearl.luckypool.io:5566 -wal solo:prl1p...au5pu -pas x
+```
+
+**Alphapool** 示例：
+
+```
+./alpha-miner -pool us2.alphapool.tech:5566 -wal solo:prl1p...au5pu -pas x
+```
+
+### 注意事项
+
+| 对比 | Pool Mining | Solo Mining |
+|------|------------|-------------|
+| 收益稳定性 | ✅ 稳定持续 | ❌ 波动大，可能几天不出块 |
+| 单笔收益 | 小（按份额分） | 大（独享整块） |
+| 适合人群 | 所有人 | 算力大户 / 运气党 |
+
+> 💡 66.4 TH/s 的算力 solo 是可行的，但要做好心理准备——可能几小时到几天才出一个块。如果追求稳定收益，建议继续 Pool Mining。
+
 ## 第五步：PRL 如何变现？
 - **推荐交易平台**：SafeTrade
 - **交易链接**：[https://safetrade.com/exchange/PRL-USDT?type=basic](https://safetrade.com/exchange/PRL-USDT?type=basic)
@@ -117,3 +161,4 @@
 - [18](https://www.freedidi.com/tag/18)[2021](https://www.freedidi.com/tag/2021)[ChatGPT](https://www.freedidi.com/tag/chatgpt)[chrome](https://www.freedidi.com/tag/chrome)[edge](https://www.freedidi.com/tag/edge)[edge浏览器](https://www.freedidi.com/tag/edge%e6%b5%8f%e8%a7%88%e5%99%a8)[ExpressVPN](https://www.freedidi.com/tag/expressvpn)[google voice](https://www.freedidi.com/tag/google-voice)[Hermes Agent](https://www.freedidi.com/tag/hermes-agent)[mac os](https://www.freedidi.com/tag/mac-os)[openclaw](https://www.freedidi.com/tag/openclaw)[SS](https://www.freedidi.com/tag/ss)[ssr](https://www.freedidi.com/tag/ssr)[VIP](https://www.freedidi.com/tag/vip)[vpn](https://www.freedidi.com/tag/vpn)[VPN推荐](https://www.freedidi.com/tag/vpn%e6%8e%a8%e8%8d%90)[win10优化](https://www.freedidi.com/tag/win10%e4%bc%98%e5%8c%96)[windows 10](https://www.freedidi.com/tag/windows-10)[Windows 11](https://www.freedidi.com/tag/windows-11)[会员](https://www.freedidi.com/tag/%e4%bc%9a%e5%91%98)[免费VPN](https://www.freedidi.com/tag/%e5%85%8d%e8%b4%b9vpn)[免费软件](https://www.freedidi.com/tag/%e5%85%8d%e8%b4%b9%e8%bd%af%e4%bb%b6)[双系统](https://www.freedidi.com/tag/%e5%8f%8c%e7%b3%bb%e7%bb%9f)[国外VPS推荐](https://www.freedidi.com/tag/%e5%9b%bd%e5%a4%96vps%e6%8e%a8%e8%8d%90)[好用的vpn](https://www.freedidi.com/tag/%e5%a5%bd%e7%94%a8%e7%9a%84vpn)[安卓子系统](https://www.freedidi.com/tag/%e5%ae%89%e5%8d%93%e5%ad%90%e7%b3%bb%e7%bb%9f)[挖矿](https://www.freedidi.com/tag/%e6%8c%96%e7%9f%bf)[排名前五的VPN](https://www.freedidi.com/tag/%e6%8e%92%e5%90%8d%e5%89%8d%e4%ba%94%e7%9a%84vpn)[最好的vpn](https://www.freedidi.com/tag/%e6%9c%80%e5%a5%bd%e7%9a%84vpn)[比特币](https://www.freedidi.com/tag/%e6%af%94%e7%89%b9%e5%b8%81)[油猴插件](https://www.freedidi.com/tag/%e6%b2%b9%e7%8c%b4%e6%8f%92%e4%bb%b6)[浏览器](https://www.freedidi.com/tag/%e6%b5%8f%e8%a7%88%e5%99%a8)[电脑优化](https://www.freedidi.com/tag/%e7%94%b5%e8%84%91%e4%bc%98%e5%8c%96)[神器](https://www.freedidi.com/tag/%e7%a5%9e%e5%99%a8)[科学上网](https://www.freedidi.com/tag/%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91)[网站推荐](https://www.freedidi.com/tag/%e7%bd%91%e7%ab%99%e6%8e%a8%e8%8d%90)[翻墙](https://www.freedidi.com/tag/%e7%bf%bb%e5%a2%99)[翻墙vpn](https://www.freedidi.com/tag/%e7%bf%bb%e5%a2%99vpn)[翻墙VPS](https://www.freedidi.com/tag/%e7%bf%bb%e5%a2%99vps)[老司机](https://www.freedidi.com/tag/%e8%80%81%e5%8f%b8%e6%9c%ba)[谷歌浏览器](https://www.freedidi.com/tag/%e8%b0%b7%e6%ad%8c%e6%b5%8f%e8%a7%88%e5%99%a8)[软件推荐](https://www.freedidi.com/tag/%e8%bd%af%e4%bb%b6%e6%8e%a8%e8%8d%90)[零度解密](https://www.freedidi.com/tag/%e9%9b%b6%e5%ba%a6%e8%a7%a3%e5%af%86)[零度解说](https://www.freedidi.com/tag/%e9%9b%b6%e5%ba%a6%e8%a7%a3%e8%af%b4)[黑苹果安装教程](https://www.freedidi.com/tag/%e9%bb%91%e8%8b%b9%e6%9e%9c%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b)
 ### 归档
 ### 分类
+
