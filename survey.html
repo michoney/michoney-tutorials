@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 能力摸底调查表 - Edy.AI.studio</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0f;
+    font-family: -apple-system, 'Noto Sans SC', 'PingFang SC', sans-serif;
+    color: #e8e8ed;
+    display: flex;
+    justify-content: center;
+    padding: 30px 16px;
+  }
+  .container {
+    max-width: 800px;
+    width: 100%;
+    background: linear-gradient(145deg, #111118 0%, #16161f 100%);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.05);
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(135deg, #f0f0ff 0%, #a5b4fc 50%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .subtitle em { font-style: normal; color: #818cf8; }
+  
+  .info-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .info-row label {
+    font-size: 13px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .info-row input {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 8px;
+    padding: 8px 14px;
+    color: #e8e8ed;
+    font-size: 14px;
+    outline: none;
+    width: 180px;
+  }
+  .info-row input:focus { border-color: #6366f1; }
+  .info-row .date-input { width: 140px; }
+
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title .num {
+    background: #6366f1;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .section-desc {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+    padding-left: 36px;
+  }
+
+  .q-group {
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+  .q-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #d0d0d8;
+    margin-bottom: 10px;
+  }
+  .q-label .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 8px;
+    margin-left: 8px;
+  }
+  .tag-multi { background: rgba(99,102,241,.15); color: #818cf8; }
+  .tag-single { background: rgba(251,191,36,.12); color: #fbbf24; }
+  
+  .opts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .opts label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #b0b0b8;
+    cursor: pointer;
+    padding: 5px 12px;
+    background: rgba(255,255,255,.04);
+    border-radius: 8px;
+    transition: all .2s;
+    border: 1px solid transparent;
+  }
+  .opts label:hover { background: rgba(99,102,241,.08); border-color: rgba(99,102,241,.2); }
+  .opts input { accent-color: #6366f1; }
+  .opts input[type="text"] {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 6px;
+    padding: 4px 10px;
+    color: #e8e8ed;
+    font-size: 13px;
+    outline: none;
+    width: 120px;
+  }
+  .opts input[type="text"]:focus { border-color: #6366f1; }
+
+  .check-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .check-grid label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #b0b0b8;
+    cursor: pointer;
+    padding: 6px 12px;
+    background: rgba(255,255,255,.03);
+    border-radius: 8px;
+    transition: all .2s;
+  }
+  .check-grid label:hover { background: rgba(99,102,241,.08); }
+  .check-grid input { accent-color: #6366f1; }
+  .check-grid .ai-sub {
+    font-size: 11px;
+    color: #555;
+    margin-left: 4px;
+  }
+
+  .btn-area {
+    text-align: center;
+    margin-top: 32px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 48px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    letter-spacing: 1px;
+  }
+  .btn:hover { opacity: .9; transform: translateY(-1px); }
+
+  .footer-note {
+    text-align: center;
+    font-size: 12px;
+    color: #444;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 20px; }
+    h1 { font-size: 22px; }
+    .check-grid { grid-template-columns: 1fr; }
+    .info-row { flex-direction: column; }
+    .info-row input { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>AI 能力摸底调查表</h1>
+  <p class="subtitle">Edy.AI.studio · 超哥 AI 实战训练营 &nbsp;|&nbsp; 请如实填写，以便针对性教学</p>
+
+  <!-- 基本信息 -->
+  <div class="info-row">
+    <label>姓名 <input type="text" placeholder="请输入姓名"></label>
+    <label>日期 <input type="date" class="date-input"></label>
+    <label>职业 <input type="text" placeholder="学生 / 开发者 / 其他"></label>
+  </div>
+
+  <!-- ====== 第一部分 ====== -->
+  <div class="section">
+    <div class="section-title"><span class="num">1</span> Web 端 AI 使用能力</div>
+    <div class="section-desc">评估你使用网页端 AI 工具的熟练程度</div>
+
+    <div class="q-group">
+      <div class="q-label">你使用过哪些网页端 AI 工具？ <span class="tag tag-multi">多选</span></div>
+      <div class="opts">
+        <label><input type="checkbox"> ChatGPT 网页版</label>
+        <label><input type="checkbox"> Claude 网页版</label>
+        <label><input type="checkbox"> DeepSeek 网页版</label>
+        <label><input type="checkbox"> Kimi (月之暗面)</label>
+        <label><input type="checkbox"> 通义千问 (阿里)</label>
+        <label><input type="checkbox"> 文心一言 (百度)</label>
+        <label><input type="checkbox"> 豆包 (字节)</label>
+        <label><input type="checkbox"> 其他 <input type="text" placeholder="请注明"></label>
+      </div>
+    </div>
+
+    <div class="q-group">
+      <div class="q-label">你的 Web AI 使用能力自评 <span class="tag tag-single">单选</span></div>
+      <div class="opts">
+        <label><input type="radio" name="q1_skill"> 不会用 AI 写提示词</label>
+        <label><input type="radio" name="q1_skill"> 会写基础提示词</label>
+        <label><input type="radio" name="q1_skill"> 会写复杂提示词（角色/约束/分步）</label>
+      </div>
+    </div>
+
+    <div class="q-group">
+      <div class="q-label">你用 AI 做过以下哪些事？ <span class="tag tag-multi">多选</span></div>
+      <div class="opts">
+        <label><input type="checkbox"> 文档总结 / 文章摘要</label>
+        <label><input type="checkbox"> 代码编写 / Debug</label>
+        <label><input type="checkbox"> 数据分析 / Excel 处理</label>
+        <label><input type="checkbox"> 翻译 / 润色文案</label>
+        <label><input type="checkbox"> 图片生成 / 设计</label>
+        <label><input type="checkbox"> 视频 / 音频处理</label>
+        <label><input type="checkbox"> 以上都没做过</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 第二部分 ====== -->
+  <div class="section">
+    <div class="section-title"><span class="num">2</span> 命令行 AI 部署能力</div>
+    <div class="section-desc">评估你操作终端、部署 AI 服务的能力</div>
+
+    <div class="q-group">
+      <div class="q-label">你的终端/命令行经验 <span class="tag tag-single">单选</span></div>
+      <div class="opts">
+        <label><input type="radio" name="q2_cli"> 没用过命令行</label>
+        <label><input type="radio" name="q2_cli"> 用过基础命令（cd/ls/vi）</label>
+        <label><input type="radio" name="q2_cli"> 熟练使用命令行</label>
+        <label><input type="radio" name="q2_cli"> 写过 Shell 脚本</label>
+      </div>
+    </div>
+
+    <div class="q-group">
+      <div class="q-label">以下哪些你做过？ <span class="tag tag-multi">多选</span></div>
+      <div class="opts">
+        <label><input type="checkbox"> 装过 / 用过 Docker</label>
+        <label><input type="checkbox"> 部署过本地 AI 模型（Ollama / llama.cpp 等）</label>
+        <label><input type="checkbox"> 配置过 API 网关（OpenClaw / OneAPI / Nginx）</label>
+        <label><input type="checkbox"> 写过自动化脚本（Python / Bash）</label>
+        <label><input type="checkbox"> 管理过 Linux 服务器</label>
+        <label><input type="checkbox"> 配置过反向代理 / 域名</label>
+        <label><input type="checkbox"> 部署过 ComfyUI</label>
+        <label><input type="checkbox"> 以上都没做过</label>
+      </div>
+    </div>
+
+    <div class="q-group">
+      <div class="q-label">你用过哪些部署方式？ <span class="tag tag-multi">多选</span></div>
+      <div class="opts">
+        <label><input type="checkbox"> 本地直接运行（pip / npm）</label>
+        <label><input type="checkbox"> Docker 容器</label>
+        <label><input type="checkbox"> Docker Compose 组合</label>
+        <label><input type="checkbox"> 云服务器部署</label>
+        <label><input type="checkbox"> 内网穿透（frp / cloudflared）</label>
+        <label><input type="checkbox"> 都没用过</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 第三部分 ====== -->
+  <div class="section">
+    <div class="section-title"><span class="num">3</span> 海外 AI 使用情况</div>
+    <div class="section-desc">评估你访问和使用海外 AI 服务的情况</div>
+
+    <div class="q-group">
+      <div class="q-label">你使用过哪些海外 AI 服务？ <span class="tag tag-multi">多选</span></div>
+      <div class="opts">
+        <label><input type="checkbox"> ChatGPT (OpenAI)</label>
+        <label><input type="checkbox"> Claude (Anthropic)</label>
+        <label><input type="checkbox"> Gemini (Google)</label>
+        <label><input type="checkbox"> Grok (xAI)</label>
+        <label><input type="checkbox"> GitHub Copilot</label>
+        <label><input type="checkbox"> Midjourney</label>
+        <label><input type="checkbox"> Cursor / Windsurf</label>
+        <label><input type="checkbox"> 其他 <input type="text" placeholder="请注明"></label>
+      </div>
+    </div>
+
+    <div class="q-group">
+      <div class="q-label">海外 AI 使用方式 <span class="tag tag-single">单选</span></div>
+      <div class="opts">
+        <label><input type="radio" name="q3_access"> 直接访问（无需翻墙）</label>
+        <label><input type="radio" name="q3_access"> 需要翻墙 / VPN</label>
+        <label><input type="radio" name="q3_access"> 通过国内镜像 / 转发</label>
+        <label><input type="radio" name="q3_access"> 从未用过海外 AI</label>
+      </div>
+    </div>
+
+    <div class="q-group">
+      <div class="q-label">使用频率 <span class="tag tag-single">单选</span></div>
+      <div class="opts">
+        <label><input type="radio" name="q3_freq"> 每天使用</label>
+        <label><input type="radio" name="q3_freq"> 每周几次</label>
+        <label><input type="radio" name="q3_freq"> 偶尔使用</label>
+        <label><input type="radio" name="q3_freq"> 几乎没用过</label>
+      </div>
+    </div>
+
+    <div class="q-group">
+      <div class="q-label">主要用途 <span class="tag tag-multi">多选</span></div>
+      <div class="opts">
+        <label><input type="checkbox"> 工作提效</label>
+        <label><input type="checkbox"> 学习研究</label>
+        <label><input type="checkbox"> 编程开发</label>
+        <label><input type="checkbox"> 内容创作</label>
+        <label><input type="checkbox"> 娱乐体验</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 第四部分 ====== -->
+  <div class="section">
+    <div class="section-title"><span class="num">4</span> AI 工具清单</div>
+    <div class="section-desc">勾选你用过或了解的工具，帮助确定课程起点</div>
+
+    <div class="q-group">
+      <div class="q-label">请逐一勾选你用过或了解的 AI 工具</div>
+      <div class="check-grid">
+        <label><input type="checkbox"> ChatGPT <span class="ai-sub">(OpenAI)</span></label>
+        <label><input type="checkbox"> Claude <span class="ai-sub">(Anthropic)</span></label>
+        <label><input type="checkbox"> Gemini <span class="ai-sub">(Google)</span></label>
+        <label><input type="checkbox"> Grok <span class="ai-sub">(xAI)</span></label>
+        <label><input type="checkbox"> DeepSeek <span class="ai-sub">(深度求索)</span></label>
+        <label><input type="checkbox"> Kimi <span class="ai-sub">(月之暗面)</span></label>
+        <label><input type="checkbox"> 通义千问 <span class="ai-sub">(阿里)</span></label>
+        <label><input type="checkbox"> 文心一言 <span class="ai-sub">(百度)</span></label>
+        <label><input type="checkbox"> 豆包 <span class="ai-sub">(字节)</span></label>
+        <label><input type="checkbox"> Copilot / Codex <span class="ai-sub">(GitHub/OpenAI)</span></label>
+        <label><input type="checkbox"> Claude Code <span class="ai-sub">(Anthropic)</span></label>
+        <label><input type="checkbox"> Cursor <span class="ai-sub">(AI IDE)</span></label>
+        <label><input type="checkbox"> Ollama <span class="ai-sub">(本地模型管理)</span></label>
+        <label><input type="checkbox"> OpenClaw / 龙虾 <span class="ai-sub">(AI 网关)</span></label>
+        <label><input type="checkbox"> ComfyUI <span class="ai-sub">(AI 生图工作流)</span></label>
+        <label><input type="checkbox"> Midjourney <span class="ai-sub">(AI 生图)</span></label>
+        <label><input type="checkbox"> Suno AI <span class="ai-sub">(AI 音乐)</span></label>
+        <label><input type="checkbox"> Stable Diffusion <span class="ai-sub">(本地生图)</span></label>
+        <label><input type="checkbox"> Hermes Agent <span class="ai-sub">(智能体)</span></label>
+        <label><input type="checkbox"> Dify / FastGPT <span class="ai-sub">(工作流平台)</span></label>
+      </div>
+    </div>
+
+    <div class="q-group">
+      <div class="q-label">其他你用过但上面未列出的工具</div>
+      <div class="opts">
+        <label><input type="text" placeholder="请填写工具名称，多个用逗号隔开" style="width:100%;padding:8px 14px;"></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- 提交 -->
+  <div class="btn-area">
+    <button class="btn" onclick="alert('感谢填写！请截图或保存本页发给超哥。')">📋 提交摸底</button>
+  </div>
+  <p class="footer-note">填写完毕后截图或打印保存，发给超哥安排课程分级 · Edy.AI.studio</p>
+
+</div>
+
+</body>
+</html>
