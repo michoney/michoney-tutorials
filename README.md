@@ -11,7 +11,7 @@
 - [三大 AI 编程/智能体工具能力对比](#三大-ai-编程智能体工具能力对比)
 - [Chrome 内存深度优化](#-chrome-内存深度优化)
 - [Ideogram 4 本地部署教程](#-ideogram-4-本地部署教程)
-- [GPT 模型倍率成本对照表](#gpt-模型倍率成本对照表)
+- [GPT 模型倍率成本对照表](tutorials/gpt-模型倍率-成本对照表.md)
 
 ---
 
@@ -195,7 +195,6 @@ flux2-vae.safetensors → ComfyUI/models/vae/
 **Made with ❤️ by michoney**
 
 [![GitHub stars](https://img.shields.io/github/stars/michoney/chrome-memory-optimizer?style=social)](https://github.com/michoney/chrome-memory-optimizer)
-
 
 
 
